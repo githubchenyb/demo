@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>TEMPLATES</title>
+</head>
+<body>
+    Hello H2
+    <p th:text="${users}"></p>
+    <form action="/user/deleteUser" method="post">
+        ID:<input name="id">
+        <button type="submit">删除</button>
+    </form>
+
+    <form action="/user/addUser" method="post">
+        ID:<input name="id">
+        NAME:<input name="name">
+        PHONE:<input name="phone">
+        <button type="submit">添加</button>
+    </form>
+</body>
+</html>
